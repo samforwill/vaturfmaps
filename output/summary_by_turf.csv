@@ -1,0 +1,103 @@
+Current Region,Current Turf,voters,supporters,precinct_count
+R01 - Inner Nova,R01A - Alexandria,39070,30430,11
+R01 - Inner Nova,R01B - Arlington,53558,42616,15
+R01 - Inner Nova,R01D - Barcroft,29637,24789,9
+R01 - Inner Nova,R01E - Clarendon,26563,21087,8
+R01 - Inner Nova,R01F - Crystal City,37082,29009,11
+R01 - Inner Nova,R01G - Lee Heights,38804,31244,12
+R01 - Inner Nova,R01H - Shirlington,31482,25530,10
+R01 - Inner Nova,R01I - Westend Alexandria,55978,42448,18
+R02 - Fairfax,R02A - Annandale,77722,56382,28
+R02 - Fairfax,R02B - Centreville,74438,45812,21
+R02 - Fairfax,R02C - East Fairfax,85309,56540,31
+R02 - Fairfax,R02D - Fair Oaks,96224,62934,31
+R02 - Fairfax,R02E - Falls Church,15631,12317,5
+R02 - Fairfax,R02F - Herndon,50266,34259,14
+R02 - Fairfax,R02G - McLean,56987,39032,18
+R02 - Fairfax,R02H - Reston,64402,40879,19
+R02 - Fairfax,R02I - Vienna,88079,56826,34
+R02 - Fairfax,R03C - HD 30,1460,532,1
+R03 - Loudoun,R03A - Ashburn,50951,28458,16
+R03 - Loudoun,R03B - HD 21,62938,33300,18
+R03 - Loudoun,R03C - HD 30,69112,28647,27
+R03 - Loudoun,R03D - Leesburg,63920,34413,22
+R03 - Loudoun,R03E - Manassas,56500,34785,20
+R03 - Loudoun,R03F - Misc,55030,17361,26
+R03 - Loudoun,R03G - South Riding,58339,33566,18
+R03 - Loudoun,R03H - Sterling,45219,26481,16
+R03 - Loudoun,R04D - HD 22,6090,3025,2
+R04 - Prince William,R04A - Dale City,54000,35428,18
+R04 - Prince William,R04B - Dumfries,65476,41909,24
+R04 - Prince William,R04C - Groveton,66382,46853,24
+R04 - Prince William,R04D - HD 22,57554,27224,16
+R04 - Prince William,R04E - HD 64,66410,28551,19
+R04 - Prince William,R04F - Lake Ridge,63697,38733,20
+R04 - Prince William,R04G - Spring Hill,50116,34030,15
+R04 - Prince William,R04H - West Springfield,69413,44141,22
+R04 - Prince William,R04I - Woodbridge,53981,35812,16
+R04 - Prince William,R05B - HD 65,6686,3335,2
+R05 - Fredericksburg,R05A - East,84623,25442,43
+R05 - Fredericksburg,R05B - HD 65,59918,29518,16
+R05 - Fredericksburg,R05C - HD 66,68719,28440,22
+R05 - Fredericksburg,R05D - SW,80481,27037,27
+R05 - Fredericksburg,R05E - West,102251,38738,46
+R06 - North Richmond,R06A - Downtown,23594,19539,9
+R06 - North Richmond,R06B - HD 57,70039,36199,21
+R06 - North Richmond,R06C - Highland Park,28147,24145,14
+R06 - North Richmond,R06D - Mechanicsville,99851,49421,39
+R06 - North Richmond,R06E - North,55983,25184,24
+R06 - North Richmond,R06F - Rockett's Landing,26065,22516,10
+R06 - North Richmond,R06G - West,62472,35199,22
+R06 - North Richmond,R06H - Westhampton,70587,41966,31
+R06 - North Richmond,R07B - HD 73,21995,9737,5
+R06 - North Richmond,R07C - HD 75,4194,2288,1
+R07 - South Richmond,R07A - East,47199,32999,18
+R07 - South Richmond,R07B - HD 73,53580,22530,14
+R07 - South Richmond,R07C - HD 75,52789,25701,16
+R07 - South Richmond,R07E - North Chesterfield,61229,36693,18
+R07 - South Richmond,R07G - South Garden,27232,23642,12
+R07 - South Richmond,R07H - West,67694,39791,22
+R07 - South Richmond,R11C - HD 71,1439,647,1
+R08 - Newport News,R08A - Hampton,36640,28837,11
+R08 - Newport News,R08B - HD 69,60067,25276,16
+R08 - Newport News,R08C - HD 86,60097,28286,18
+R08 - Newport News,R08D - Newport News,39021,30495,17
+R08 - Newport News,R08E - Nicewood,45239,29591,12
+R08 - Newport News,R08F - Port Warwick,45212,28121,14
+R09 - Suffolk,R09A - Chesapeake,76055,29920,25
+R09 - Suffolk,R09B - HD 84,76377,41894,35
+R09 - Suffolk,R09C - HD 89,61535,25960,24
+R09 - Suffolk,R09D - Misc,36404,12029,21
+R09 - Suffolk,R09E - Portsmouth,116358,74220,49
+R09 - Suffolk,R09F - South,11997,3959,4
+R10 - Virginia Beach / Norfolk,R10A - Virginia Beach,105954,42960,34
+R10 - Virginia Beach / Norfolk,R10B - Chesapeake,12863,6397,4
+R10 - Virginia Beach / Norfolk,R10C - HD 97,63504,30211,20
+R10 - Virginia Beach / Norfolk,R10D - Norfolk,36654,27412,13
+R10 - Virginia Beach / Norfolk,R10E - Norfolk Central,42811,32762,13
+R10 - Virginia Beach / Norfolk,R10F - North,74095,29865,35
+R10 - Virginia Beach / Norfolk,R10G - North Norfolk,53083,30444,17
+R10 - Virginia Beach / Norfolk,R10H - Portsmouth,7564,5547,3
+R10 - Virginia Beach / Norfolk,R10I - South,75062,34829,25
+R10 - Virginia Beach / Norfolk,R10J - West Norfolk,47636,27197,16
+R11 - Southside,R11A - Emporia,60284,26737,71
+R11 - Southside,R11B - Gloucester,73009,17084,32
+R11 - Southside,R11C - HD 71,57443,21930,18
+R11 - Southside,R11D - HD 82,67527,35672,32
+R11 - Southside,R11E - Colonial Heights / Chesterfield,62559,25596,19
+R12 - Shenandoah,R11C - HD 71,11227,7198,2
+R12 - Shenandoah,R12A - Harrisonburg,137577,32129,56
+R12 - Shenandoah,R12B - North Roanoke,113797,35841,56
+R12 - Shenandoah,R12C - South Roanoke,73222,30119,27
+R12 - Shenandoah,R12D - Staunton,123839,29640,69
+R12 - Shenandoah,R12E - Winchester,135318,38642,53
+R13 - Southwest,R13A -  Greater CD9,186500,42979,114
+R13 - Southwest,R13B - Galax,271124,24068,199
+R13 - Southwest,R13C - The Hollers,100165,36584,65
+R13 - Southwest,R13D - HD41,56127,22114,27
+R13 - Southwest,R13E - Lynchburg,188575,46690,77
+R14 - Charlottesville,R14A - Central,70160,20200,43
+R14 - Charlottesville,R14B - NE Charlottesville,44963,32549,14
+R14 - Charlottesville,R14C - S Charlottesville,53403,28018,16
+R14 - Charlottesville,R14D - South,56655,17146,37
+R14 - Charlottesville,R14E - UV,45696,30110,14
