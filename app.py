@@ -37,6 +37,7 @@ geojson_data = load_geojson()
 with st.sidebar:
     st.header("Filters")
 
+    # Region filter
     regions = sorted(df_metrics["Current Region"].dropna().unique())
     regions_with_all = ["VA All Regions"] + regions
 
@@ -46,19 +47,43 @@ with st.sidebar:
     else:
         selected_regions = [r for r in selected_regions_raw if r != "VA All Regions"]
 
+    # County filter (based on selected regions)
     if selected_regions:
+        available_counties = sorted(
+            df_metrics[df_metrics["Current Region"].isin(selected_regions)]["county_name"].dropna().unique()
+        )
+        counties_with_all = ["All Counties"] + available_counties
+        selected_counties_raw = st.multiselect("Select County/Counties:", counties_with_all, default=["All Counties"])
+        
+        if "All Counties" in selected_counties_raw:
+            selected_counties = available_counties
+        else:
+            selected_counties = [c for c in selected_counties_raw if c != "All Counties"]
+    else:
+        selected_counties = []
+
+    # Turf filter (based on selected regions and counties)
+    if selected_regions and selected_counties:
+        region_county_filter = (
+            df_metrics["Current Region"].isin(selected_regions) & 
+            df_metrics["county_name"].isin(selected_counties)
+        )
         available_turfs = sorted(
-            df_metrics[df_metrics["Current Region"].isin(selected_regions)]["Current Turf"].dropna().unique()
+            df_metrics[region_county_filter]["Current Turf"].dropna().unique()
         )
         selected_turfs = st.multiselect("Select Turf(s):", available_turfs, default=[])
     else:
         selected_turfs = []
 
+
 # -----------------------------
-# Filter for view
+# Filter for view (updated to include county filter)
 # -----------------------------
-if selected_regions:
-    filtered_metrics = df_metrics[df_metrics["Current Region"].isin(selected_regions)].copy()
+if selected_regions and selected_counties:
+    filtered_metrics = df_metrics[
+        df_metrics["Current Region"].isin(selected_regions) & 
+        df_metrics["county_name"].isin(selected_counties)
+    ].copy()
     if selected_turfs:
         filtered_metrics = filtered_metrics[filtered_metrics["Current Turf"].isin(selected_turfs)]
 else:
