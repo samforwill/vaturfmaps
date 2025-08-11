@@ -165,7 +165,7 @@ if len(filtered_metrics) > 0:
                     *(["Supporters:"] if "supporters" in filtered_metrics.columns else []),
                 ],
                 localize=True,
-            ) if len(filtered_features) < 1000 else None,
+            ) if len(filtered_features) < 3000 else None,
         ).add_to(m)
 
 st_folium(m, key="map", width=None, height=600, returned_objects=[])
