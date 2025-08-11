@@ -13,13 +13,13 @@ st.title("Turf Mapping")
 # -----------------------------
 @st.cache_data
 def load_metrics():
-    df = pd.read_csv("output/precincts_metrics_updated.csv")
+    df = pd.read_csv("output/precincts_metrics.csv")
     df["van_precinct_id"] = df["van_precinct_id"].astype(str)
     return df
 
 @st.cache_data
 def load_geojson():
-    with open("output/precincts_simplified_updated.geojson", "r") as f:
+    with open("output/precincts_simplified.geojson", "r") as f:
         data = json.load(f)
     for feature in data["features"]:
         feature["properties"]["van_precinct_id"] = str(feature["properties"]["van_precinct_id"])
