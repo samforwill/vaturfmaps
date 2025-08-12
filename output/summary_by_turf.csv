@@ -18,11 +18,11 @@ R02 - Fairfax,R02G - McLean,56987,39032,18
 R02 - Fairfax,R02H - Reston,64401,40879,19
 R02 - Fairfax,R02I - Vienna,63363,42252,23
 R03 - Loudoun,R03A - Ashburn,53648,29962,17
-R03 - Loudoun,R03B - HD 21,59131,30721,17
+R03 - Loudoun,R03B - HD 21,57749,29884,16
 R03 - Loudoun,R03C - HD 30,70572,29179,28
 R03 - Loudoun,R03D - Leesburg,67239,36226,24
-R03 - Loudoun,R03E - Manassas,47078,28264,14
-R03 - Loudoun,R03F - Misc,55030,17361,26
+R03 - Loudoun,R03E - Manassas,48460,29101,15
+R03 - Loudoun,R03F - Fauquier,55030,17361,26
 R03 - Loudoun,R03G - South Riding,65098,37614,21
 R03 - Loudoun,R03H - Sterling,57160,33690,21
 R04 - Prince William,R04A - Dale City,57439,37630,19
@@ -43,17 +43,17 @@ R06 - North Richmond,R06A - Downtown,33733,28697,14
 R06 - North Richmond,R06B - HD 57,66192,33660,20
 R06 - North Richmond,R06C - Highland Park,60100,49286,26
 R06 - North Richmond,R06D - Mechanicsville,72696,27747,31
-R06 - North Richmond,R06E - North,45717,15960,19
-R06 - North Richmond,R06G - West,68190,39127,24
+R06 - North Richmond,R06E - Hanover,45717,15960,19
+R06 - North Richmond,R06G - West Henrico,68190,39127,24
 R06 - North Richmond,R06H - Westhampton,38238,24877,18
 R07 - South Richmond,R07A - East,49544,34008,19
 R07 - South Richmond,R07B - HD 73,75575,32267,19
 R07 - South Richmond,R07C - HD 75,56983,27989,17
-R07 - South Richmond,R07D - Placeholder1,30089,25868,12
+R07 - South Richmond,R07D - Rocketts Landing,30089,25868,12
 R07 - South Richmond,R07E - North Chesterfield,54297,33862,20
-R07 - South Richmond,R07F - [Retired],45713,22444,12
+R07 - South Richmond,R07F - South Chesterfield,45713,22444,12
 R07 - South Richmond,R07G - South Garden,27232,23642,12
-R07 - South Richmond,R07H - West,54483,31273,18
+R07 - South Richmond,R07H - North Midlothian,54483,31273,18
 R08 - Newport News,R08A - Hampton,36640,28837,11
 R08 - Newport News,R08B - HD 69,66117,26660,18
 R08 - Newport News,R08C - HD 86,60097,28286,18
@@ -61,19 +61,19 @@ R08 - Newport News,R08D - Newport News,39021,30495,17
 R08 - Newport News,R08E - Nicewood,60149,38796,16
 R08 - Newport News,R08F - Port Warwick,47828,29638,15
 R09 - Suffolk,R09A - Chesapeake,79284,28652,26
-R09 - Suffolk,R09B - HD 84,18488,8270,14
-R09 - Suffolk,R09C - HD 89,119424,59584,45
-R09 - Suffolk,R09D - Misc,36404,12029,21
-R09 - Suffolk,R09E - Portsmouth,76847,51897,34
-R09 - Suffolk,R09F - South,73769,42657,27
+R09 - Suffolk,R09B - HD 84,73318,39427,34
+R09 - Suffolk,R09C - HD 89,64594,28427,25
+R09 - Suffolk,R09D - Isle of Wight,36404,12029,21
+R09 - Suffolk,R09E - West Portsmouth,76847,51897,34
+R09 - Suffolk,R09F - East Portsmouth,73769,42657,27
 R10 - Virginia Beach / Norfolk,R10A - Virginia Beach,97364,37855,29
 R10 - Virginia Beach / Norfolk,R10C - HD 97,63504,30211,20
-R10 - Virginia Beach / Norfolk,R10D - Norfolk,58434,41433,20
+R10 - Virginia Beach / Norfolk,R10D - West Norfolk,58434,41433,20
 R10 - Virginia Beach / Norfolk,R10E - Norfolk Central,42811,32762,13
 R10 - Virginia Beach / Norfolk,R10F - North,35650,14545,21
 R10 - Virginia Beach / Norfolk,R10G - North Norfolk,53340,26173,18
 R10 - Virginia Beach / Norfolk,R10I - South,75062,34829,25
-R10 - Virginia Beach / Norfolk,R10J - West Norfolk,68319,35227,24
+R10 - Virginia Beach / Norfolk,R10J - East Norfolk,68319,35227,24
 R11 - Southside,R11A - Emporia,62796,27610,74
 R11 - Southside,R11B - Gloucester,73009,17084,32
 R11 - Southside,R11C - HD 71,70109,29775,21
