@@ -300,21 +300,25 @@ if len(filtered_metrics) > 0:
     # Checkbox + chart (compare counties)
     compare_counties = st.checkbox("Compare counties in filter", value=False, key="compare_counties_chart")
     if compare_counties and "voters" in filtered_metrics.columns:
-        agg_turf = (
+        agg_county = (  # Fixed: renamed from agg_turf to agg_county
             filtered_metrics.groupby("county_name", as_index=False)["voters"]
             .sum()
             .sort_values("county_name", ascending=True)
         )
-        # Use same colors as map
+        
+        # Create a simple color palette for counties (not turfs)
+        unique_counties = sorted(agg_county["county_name"].unique())
+        county_colors = {county: palette[i % len(palette)] for i, county in enumerate(unique_counties)}
+        
         fig_county = px.bar(
-            agg_turf,
+            agg_county,
             x="county_name",
             y="voters",
-            color="Current Turf",
-            color_discrete_map=turf_colors_map,
+            color="county_name",  # Fixed: color by county_name, not Current Turf
+            color_discrete_map=county_colors,  # Fixed: use county colors
             title="Voters by County",
             height=380,
             labels={"county_name": "County", "voters": "Voters"},
         )
-        fig_turf.update_layout(showlegend=False, xaxis_title="county_name", yaxis_title="Voters")
+        fig_county.update_layout(showlegend=False, xaxis_title="County", yaxis_title="Voters")  # Fixed: variable name and labels
         st.plotly_chart(fig_county, use_container_width=True)
