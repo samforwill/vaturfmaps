@@ -270,3 +270,51 @@ if len(filtered_metrics) > 0:
         )
         fig_turf.update_layout(showlegend=False, xaxis_title="Turf", yaxis_title="Voters")
         st.plotly_chart(fig_turf, use_container_width=True)
+
+# =====================================================
+# Section 3: Breakdown by County (table + checkbox + DL)
+# =====================================================
+if len(filtered_metrics) > 0:
+    st.subheader("Breakdown by County")
+
+    county_summary = (
+        filtered_metrics.groupby("county_name")
+        .agg(
+            voters=("voters", "sum") if "voters" in filtered_metrics.columns else ("van_precinct_id", "size"),
+            supporters=("supporters", "sum") if "supporters" in filtered_metrics.columns else ("van_precinct_id", "size"),
+            precinct_count=("van_precinct_id", "count"),
+        )
+        .sort_index()
+    )
+    st.dataframe(county_summary, use_container_width=True)
+
+    # Small download button for this breakdown table
+    st.download_button(
+        "Download breakdown as CSV",
+        data=turf_summary.reset_index().to_csv(index=False),
+        file_name="breakdown_by_county.csv",
+        mime="text/csv",
+        use_container_width=False,
+    )
+
+    # Checkbox + chart (compare counties)
+    compare_counties = st.checkbox("Compare counties in filter", value=False, key="compare_counties_chart")
+    if compare_counties and "voters" in filtered_metrics.columns:
+        agg_turf = (
+            filtered_metrics.groupby("county_name", as_index=False)["voters"]
+            .sum()
+            .sort_values("county_name", ascending=True)
+        )
+        # Use same colors as map
+        fig_county = px.bar(
+            agg_turf,
+            x="county_name",
+            y="voters",
+            color="Current Turf",
+            color_discrete_map=turf_colors_map,
+            title="Voters by County",
+            height=380,
+            labels={"county_name": "County", "voters": "Voters"},
+        )
+        fig_turf.update_layout(showlegend=False, xaxis_title="county_name", yaxis_title="Voters")
+        st.plotly_chart(fig_county, use_container_width=True)
