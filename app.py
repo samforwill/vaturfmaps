@@ -291,7 +291,7 @@ if len(filtered_metrics) > 0:
     # Small download button for this breakdown table
     st.download_button(
         "Download breakdown as CSV",
-        data=county_summary.reset_index().to_csv(index=False),
+        data=county_summary.reset_index().to_csv(index=False)
         file_name="breakdown_by_county.csv",
         mime="text/csv",
         use_container_width=False,
